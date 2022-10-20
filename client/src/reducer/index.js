@@ -1,16 +1,8 @@
 const initialState = {
-    characters : []
-}
-
-function rootReducer(state = initialState, actions) {
-    switch (actions.type) {
-        case 'GET_CHARACTERS':
-            return {
-                ...state,
-                characters: actions.payload
-            }
-            default: return state;
+};
+const rootReducer = (state = initialState, action) => {
+    switch (action.type) {
     }
-}
+};
 
 export default rootReducer;
