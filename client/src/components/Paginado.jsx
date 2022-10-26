@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/Paginado.css";
 
 export default function Paginado({
   dogsPerPage,
@@ -13,11 +14,11 @@ export default function Paginado({
     pageNumbers.push(i);
   }
   return (
-    <div>
+    <div className="Paginado">
       {pageNumbers &&
         pageNumbers.map((number, index) => {
           return (
-            <button key={index} onClick={() => setCurrentPage(number)}>
+            <button className="Paginado2" key={index} onClick={() => setCurrentPage(number)}>
               {number}
             </button>
           );

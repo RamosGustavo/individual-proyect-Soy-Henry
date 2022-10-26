@@ -3,7 +3,7 @@ import LandingPage from "./components/LandingPage"
 import Home from "./components/Home";
 import DogCreate from "./components/DogCreate";
 import Details from "./components/Details";
-import { getDogs, getTemperamento } from "./components/actions";
+import { getDogs } from "./redux/actions";
 import { useDispatch } from "react-redux";
 import { useEffect }  from "react";
 

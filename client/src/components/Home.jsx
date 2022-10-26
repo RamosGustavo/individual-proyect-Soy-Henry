@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getDogs, getTemperamento } from "./actions/index";
-import { Link } from "react-router-dom";
+import { getDogs } from "../redux/actions/index"
+// import { Link } from "react-router-dom";
 import Card from "./Card";
 import "./styles/Home.css";
 import Paginado from "./Paginado";
-
+import NavBar from "./navBar";
+import SideBar from "./SideBar";
 
 
 function Home() {
@@ -18,21 +19,19 @@ function Home() {
   const indexOfFirstDog = indexOfLastDog - dogsPerPage;
   const currentDogs = allDogs.slice(indexOfFirstDog, indexOfLastDog);
 
-  const paginado = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
 
-function handleClick(e){
-  e.preventDefault();
-  dispatch(getDogs());
-}
+// function handleClick(e){
+//   e.preventDefault();
+//   dispatch(getDogs());
+// }
 
 
       return (
         <div className="Body">
-      <Link to="/create">Crear Perraso</Link>
-      <h1 className="titleHome">DOG WORLD</h1>
-      <button className="Filter1" onClick={e => {handleClick(e)}}>volver a cargar los perros</button>
+      <h1 className="one">DOG WORLD</h1>
+      <NavBar />
+      <SideBar />
+      {/* <button className="Filter1" onClick={e => {handleClick(e)}}>volver a cargar los perros</button> */}
       <div className="Paginado">
         <Paginado
           dogsPerPage={dogsPerPage}
@@ -54,7 +53,11 @@ function handleClick(e){
             temperament={el.temperament}
             temperaments={el.temperaments}
           />
+          
         )})}
+        <div>
+        {/* <Link to="/create">Crear Perro</Link> */}
+        </div>
       </div>
       
     </div>

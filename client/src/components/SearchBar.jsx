@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { useDispatch } from 'react-redux'
-import { getDogName } from './actions/index'
+import { getDogName } from '../redux/actions/index'
 import { useHistory } from "react-router-dom";
+import "./styles/SearchBar.css"
 
 export default function SearchBar ({paginado}) {
     const dispatch = useDispatch();

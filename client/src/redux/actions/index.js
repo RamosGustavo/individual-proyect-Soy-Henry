@@ -38,7 +38,7 @@ export function filterDogsByMINWeight(payload) {
     }
 }
 
-export function getDogsByName(name) {
+export function getDogName(name) {
     return async function (dispatch) {
         const { data } = await axios.get(`http://localhost:3001/dogs?name=${name}`);
         return dispatch({

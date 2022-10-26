@@ -2,12 +2,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
 }
 
-.titleHome {
+.Cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 250px;
+}
+
+.one {
     display: flex;
     justify-content: center;
+    color: white;
+    font-size: 50px;
 }
+
 
 .Filter1 {
     display: flex;
@@ -18,4 +28,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: radial-gradient(circle, #2e232a, #362b36, #3d3444, #413e52, #434860, #494961, #4f4961, #544a61, #584251, #553d42, #4c3a36, #41372f);
+}
+
+.Paginado2 {
+    margin-top: 30px;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
 }

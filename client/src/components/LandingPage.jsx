@@ -14,7 +14,6 @@ export default function LandingPage() {
             </Link>
             <img
                 className="Portada"
-                src="https://images.pexels.com/photos/3631659/pexels-photo-3631659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt=""
             />
         </div>
