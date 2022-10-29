@@ -12,7 +12,7 @@ import {
     filterDogsByMAXWeight,
     filterDogsByMINWeight,
     orderByWeight
-} from "../redux/actions/index";
+} from "../redux/actions/index.js";
 import "./styles/SideBar.css";
 
 export default function SideBar() {
@@ -129,10 +129,10 @@ export default function SideBar() {
                         }}
                     >
                         <option defaultValue value="all">
-                            All Sources 🐶
+                            All Sources Dogs
                         </option>
-                        <option value="created">Yours 🐶</option>
-                        <option value="inDB">dbase 🐶</option>
+                        <option value="created">Yours-Dog</option>
+                        <option value="inDB">DBase-Dog</option>
                     </select>
                 </div>
                 <div className="filterSection">
@@ -194,11 +194,11 @@ export default function SideBar() {
                     </select>
                 </div>
                 <div className="filterSection">
-                    <h5 className="filterHeader">Add a Woof</h5>
+                    <h5 className="filterHeader">Add a dog</h5>
                     <div className="addDog">
-                        <Link to="/newDog/" className="tooltip">
-                            <span className="material-icons">add_circle</span>
-                            <span className="tooltiptext">Add your Woof 🐕🐕🐕🐕</span>
+                        <Link to="/Create/" className="tooltip">
+                            <span className="material-icons">New-Dog</span>
+                            <span className="tooltiptext">Add your Woof 🐕</span>
                         </Link>
                     </div>
                 </div>

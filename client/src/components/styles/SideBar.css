@@ -1,8 +1,8 @@
 .side {
     display: flex;
     flex-direction: column;
-    background-color: rgb(18, 42, 41);
-    color: #fff;
+    background-color: rgb(180, 177, 162);
+    color: rgb(0, 0, 0);
     top: 5%;
     left: 2%;
     margin: 100px 5px;
@@ -12,6 +12,8 @@
     min-width: 200px;
     height: fit-content;
     position: fixed;
+    z-index: 1;
+    font-size: 16px;
 }
 
 .sideBarHeader {
@@ -27,38 +29,42 @@
 }
 
 .refresh:hover {
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: #454545;
     cursor: pointer;
 }
+
+
 
 .tooltip {
     position: relative;
     display: inline-block;
     cursor: pointer;
     user-select: none;
+    color: rgb(1, 1, 1);
 }
 
+
 .tooltip .tooltiptext {
-    font-size: 18px;
+    font-size: 20px;
     top: -05px;
     left: 120%;
     visibility: hidden;
     width: 120px;
-    background-color: black;
-    color: #fff;
+    background-color: rgb(48, 48, 48);
+    color: rgb(100, 99, 99);
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
     position: absolute;
-    z-index: 1;
     cursor: pointer;
     user-select: none;
 }
 
+
 .tooltip:hover .tooltiptext {
     visibility: visible;
-    z-index: 1;
+    z-index: 10;
 }
 
 .filterSection {
@@ -81,7 +87,7 @@ select {
 }
 
 .addDog>a>span {
-    font-size: 40px;
+    font-size: 38px;
 }
 
 option {

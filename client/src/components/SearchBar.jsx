@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { useDispatch } from 'react-redux'
-import { getDogName } from '../redux/actions/index'
+import { getDogName } from '../redux/actions/index.js'
 import { useHistory } from "react-router-dom";
 import "./styles/SearchBar.css"
 
@@ -26,10 +26,10 @@ export default function SearchBar ({paginado}) {
 
     return (
         <div>
-            <form>
+            <div>
                 <input type="text" onChange={e => handleInput(e)} value={searchDog} placeholder="Search..."/>
                 <button type="submit" onClick={e => handleSubmit(e)}>Look for</button>
-            </form>
+            </div>
         </div>
     )
 }
