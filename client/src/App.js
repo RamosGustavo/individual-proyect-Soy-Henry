@@ -3,23 +3,21 @@ import LandingPage from "./components/LandingPage"
 import Home from "./components/Home";
 import DogCreate from "./components/DogCreate";
 import Details from "./components/Details";
-import { getDogs } from "./redux/actions";
+import { getDogs, getTemperamentsList,
+  getBreeds, } from "./redux/actions";
 import { useDispatch } from "react-redux";
 import { useEffect }  from "react";
-
 
 function App() {
 
 const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(getDogs());
-    // dispatch(getTemperamento());
-  }, [dispatch]);
+useEffect(() => {
+  dispatch(getDogs());
+  dispatch(getTemperamentsList());
+  dispatch(getBreeds());
+}, [dispatch]);
 
-  // useEffect(() => {
-  //   dispatch(getTemperamento());
-  // }, [dispatch]);
 
   return (
     <BrowserRouter>

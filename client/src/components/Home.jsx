@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getDogs } from "../redux/actions/index.js"
-import Card from "./Card";
 import "./styles/Home.css";
 import Paginado from "./Paginado";
 import NavBar from "./navBar";
 import SideBar from "./SideBar";
-
+import { useEffect } from "react";
+import DogsGenerator from "./DogsGenerator.jsx";
 
 function Home() {
   const dispatch = useDispatch();
-  const allDogs = useSelector((state) => state.dogs)
+  const { allDogs } = useSelector((state) => state)
 
   const [currentPage, setCurrentPage] = useState(1);
   const [dogsPerPage] = useState(8);
@@ -18,12 +18,14 @@ function Home() {
   const indexOfFirstDog = indexOfLastDog - dogsPerPage;
   const currentDogs = allDogs.slice(indexOfFirstDog, indexOfLastDog);
 
+useEffect (() => {
 
-function handleClick(e){
+})
+
+  function handleClick(e){
   e.preventDefault();
   dispatch(getDogs());
 }
-
 
       return (
         <div className="Body">
@@ -39,7 +41,8 @@ function handleClick(e){
           currentPage={currentPage}
         />
         </div>
-    <div className="Cards">
+        <DogsGenerator dogs = { currentDogs }></DogsGenerator>
+    {/* <div className="Cards">
         {
           currentDogs.map((el) => { 
             return  (
@@ -52,9 +55,7 @@ function handleClick(e){
             temperaments={el.temperaments}
           />
         )})}
-        <div>
-        </div>
-      </div>
+      </div> */}
       
     </div>
   );

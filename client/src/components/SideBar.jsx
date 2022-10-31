@@ -89,7 +89,6 @@ export default function SideBar() {
                             handleClick(e);
                         }}
                     >
-                        <span className="material-icons refresh">loop</span>
                     </div>
                 </div>
                 <hr />

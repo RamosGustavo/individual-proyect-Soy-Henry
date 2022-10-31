@@ -19,14 +19,17 @@
 }
 
 .Filter1 {
+    padding: 0px;
+    margin: 0px;
     display: flex;
     justify-content: center;
-    color: #2e232a;
-    background-color: #2e232a;
+    color: #654a34;
+    background-color: #413e52,
 }
 
 .Body {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     align-items: center;
     background-image: radial-gradient(circle, #2e232a, #362b36, #3d3444, #413e52, #434860, #494961, #4f4961, #544a61, #584251, #553d42, #4c3a36, #41372f);
