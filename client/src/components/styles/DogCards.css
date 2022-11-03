@@ -9,6 +9,7 @@
     background-color: rgb(180, 177, 162);
     background-size: cover;
     background-position: -20px -50%;
+    font-family:monospace;
 }
 
 .dogCard:hover {

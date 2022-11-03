@@ -21,11 +21,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 5px 0;
 }
 
 .header {
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 .refresh:hover {
@@ -55,7 +54,6 @@
     color: rgb(100, 99, 99);
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
     position: absolute;
     cursor: pointer;
     user-select: none;
@@ -92,4 +90,24 @@ select {
 
 option {
     line-height: 1.5;
+}
+
+
+.laca {
+    border: 2px solid #e8e8e8;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #d7d5d5;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.laca:focus {
+    outline-color: rgb(255, 255, 255);
+    background-color: #d1d2cc;
+    color: #080808;
+    box-shadow: 5px 5px #bdbaba;
 }

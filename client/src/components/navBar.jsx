@@ -12,8 +12,8 @@ export default function NavBar() {
                         <Link to="/home">
                         </Link>
                         <div>
-                            <h1>Woof</h1>
-                            <p>The dog's page</p>
+                            <h1>WOW</h1>
+                            <p>Your dog page</p>
                         </div>
                     </div>
                     <div>

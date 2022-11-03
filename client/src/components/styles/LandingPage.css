@@ -6,14 +6,41 @@
     align-items: center;
 }
 
-.boton {
-    border: 1px solid #5c759f; /*anchura, estilo y color borde*/
-    padding: 15px; /*espacio alrededor texto*/
-    background-color: #182235; /*color botón*/
-    color: #fefcff; /*color texto*/
-    text-decoration: none; /*decoración texto*/
-    text-transform: uppercase; /*capitalización texto*/
-    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
-    border-radius: 48px; /*bordes redondos*/
-    }
+.btn1 {
+    width: 12.2em;
+    height: 4.8em;
+    margin: 0.5em;
+    background: rgb(10, 10, 10);
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
 
+button:hover {
+    color: black;
+}
+
+button:after {
+    content: "";
+    background: rgb(247, 244, 244);
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}

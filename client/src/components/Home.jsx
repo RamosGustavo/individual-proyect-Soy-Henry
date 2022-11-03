@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getDogs } from "../redux/actions/index.js"
+import {  useSelector } from "react-redux";
 import "./styles/Home.css";
 import Paginado from "./Paginado";
 import NavBar from "./navBar";
 import SideBar from "./SideBar";
-import { useEffect } from "react";
+
 import DogsGenerator from "./DogsGenerator.jsx";
 
 function Home() {
-  const dispatch = useDispatch();
-  const { allDogs } = useSelector((state) => state)
+  const  { allDogs }  = useSelector((state) => state)
 
   const [currentPage, setCurrentPage] = useState(1);
   const [dogsPerPage] = useState(8);
@@ -18,21 +16,14 @@ function Home() {
   const indexOfFirstDog = indexOfLastDog - dogsPerPage;
   const currentDogs = allDogs.slice(indexOfFirstDog, indexOfLastDog);
 
-useEffect (() => {
 
-})
-
-  function handleClick(e){
-  e.preventDefault();
-  dispatch(getDogs());
-}
 
       return (
         <div className="Body">
       <h1 className="one">DOG WORLD</h1>
       <NavBar />
       <SideBar />
-      <button className="Filter1" onClick={e => {handleClick(e)}}></button>
+
       <div className="Paginado">
         <Paginado
           dogsPerPage={dogsPerPage}

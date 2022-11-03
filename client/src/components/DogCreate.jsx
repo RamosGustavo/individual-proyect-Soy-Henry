@@ -146,10 +146,10 @@ export default function DogCreation() {
                             <label>Name:</label>
                             </div>
                             <input
+                            className="raca"
                                 type="text"
                                 value={input.name}
                                 name="name"
-                                placeholder="Grand Canadian Bulldog"
                                 onChange={(e) => handleChange(e)}
                                 required
                             />
@@ -162,24 +162,24 @@ export default function DogCreation() {
                             <label>Image URL:</label>
                             </div>
                             <input
+                            className="raca"
                                 type="url"
                                 value={input.image}
                                 name="image"
-                                placeholder="http://myimageontheweb.com"
                                 onChange={(e) => handleChange(e)}
                             />
                             <div>
                                 <p className="error">{errors.image}</p>
                             </div>
                         </div>
-                        <div className="Section">
-                            <h4>Heights</h4>
+                        <div className="Section8">
+                        <h4>Heights</h4>
                             <label>Min</label>
                             <input
+                            className="raca"
                                 type="number"
                                 value={input.height_min}
                                 name="height_min"
-                                placeholder="20"
                                 onChange={(e) => handleChange(e)}
                                 required
                             />
@@ -188,10 +188,10 @@ export default function DogCreation() {
                             </div>
                             <label>Max</label>
                             <input
+                            className="raca"
                                 type="number"
                                 value={input.height_max}
                                 name="height_max"
-                                placeholder="50"
                                 onChange={(e) => handleChange(e)}
                                 required
                             />
@@ -199,14 +199,14 @@ export default function DogCreation() {
                                 <p className="error">{errors.height_max}</p>
                             </div>
                         </div>
-                        <div className="Section">
+                        <div className="Section8">
                             <h4>Weights</h4>
                             <label>Min</label>
                             <input
+                            className="raca"
                                 type="number"
                                 value={input.weight_min}
                                 name="weight_min"
-                                placeholder="15"
                                 onChange={(e) => handleChange(e)}
                                 required
                             />
@@ -215,10 +215,10 @@ export default function DogCreation() {
                             </div>
                             <label>Max</label>
                             <input
+                            className="raca"
                                 type="number"
                                 value={input.weight_max}
                                 name="weight_max"
-                                placeholder="32"
                                 onChange={(e) => handleChange(e)}
                                 required
                             />
@@ -231,10 +231,10 @@ export default function DogCreation() {
                             <label>Life Span</label>
                             </div>
                             <input
+                            className="raca"
                                 type="text"
                                 value={input.life_span}
                                 name="life_span"
-                                placeholder="12 - 15 years"
                                 onChange={(e) => handleChange(e)}
                             />
                         </div>
@@ -253,7 +253,7 @@ export default function DogCreation() {
                                 })}
                             </select>
                             <div className="sidebar_box">
-                                <h4>You have selected that:</h4>
+                                <h4 className="fafa">You have selected that</h4>
                                 {input.temperament.map((el) => (
                                     <div key={el} className="selectedItems">
                                         <p>{el}</p>

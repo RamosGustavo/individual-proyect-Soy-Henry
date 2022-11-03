@@ -95,6 +95,7 @@ export default function SideBar() {
                 <div className="filterSection">
                     <h5 className="filterHeader">Order by name</h5>
                     <select
+                    className="laca"
                         onChange={(e) => {
                             handleClickOrder(e);
                         }}
@@ -109,6 +110,7 @@ export default function SideBar() {
                 <div className="filterSection">
                     <h5 className="filterHeader">Order by weight</h5>
                     <select
+                    className="laca"
                         onChange={(e) => {
                             handleClickOrderWeight(e);
                         }}
@@ -123,6 +125,7 @@ export default function SideBar() {
                 <div className="filterSection">
                     <h5 className="filterHeader">Filter by source</h5>
                     <select
+                    className="laca"
                         onChange={(e) => {
                             handleFilterCreated(e);
                         }}
@@ -136,7 +139,7 @@ export default function SideBar() {
                 </div>
                 <div className="filterSection">
                     <h5 className="filterHeader">Filter by temperament</h5>
-                    <select onChange={(e) => handleFilteredByTemp(e)}>
+                    <select className="laca" onChange={(e) => handleFilteredByTemp(e)}>
                         <option value="all">All Temperaments</option>
                         {temperaments.map((temp) => {
                             return (
@@ -149,7 +152,7 @@ export default function SideBar() {
                 </div>
                 <div className="filterSection">
                     <h5 className="filterHeader">Filter by breed</h5>
-                    <select onChange={(e) => handleFilteredByBreed(e)}>
+                    <select className="laca" onChange={(e) => handleFilteredByBreed(e)}>
                         <option value="all">All Breeds</option>
                         {breeds.map((breed) => {
                             return breed ? (
@@ -164,7 +167,7 @@ export default function SideBar() {
                 </div>
                 <div className="filterSection">
                     <h5 className="filterHeader">Filter by max weight</h5>
-                    <select onChange={(e) => handleFilteredMAXWeight(e)}>
+                    <select className="laca" onChange={(e) => handleFilteredMAXWeight(e)}>
                         <option value="all">All Weights</option>
                         {allDogsMaxWeights.map((maxWeight) => {
                             return maxWeight ? (
@@ -179,7 +182,7 @@ export default function SideBar() {
                 </div>
                 <div className="filterSection">
                     <h5 className="filterHeader">Filter by min weight</h5>
-                    <select onChange={(e) => handleFilteredMINWeight(e)}>
+                    <select className="laca" onChange={(e) => handleFilteredMINWeight(e)}>
                         <option value="all">All Weights</option>
                         {allDogsMinWeights.map((minWeight) => {
                             return minWeight ? (

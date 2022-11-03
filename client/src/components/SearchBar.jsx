@@ -27,8 +27,8 @@ export default function SearchBar ({paginado}) {
     return (
         <div>
             <div>
-                <input type="text" onChange={e => handleInput(e)} value={searchDog} placeholder="Search..."/>
-                <button type="submit" onClick={e => handleSubmit(e)}>Look for</button>
+                <input className='input1' type="text" onChange={e => handleInput(e)} value={searchDog} placeholder="Search..."/>
+                <button className='btn' type="submit" onClick={e => handleSubmit(e)}>Look for</button>
             </div>
         </div>
     )
