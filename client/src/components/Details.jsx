@@ -2,6 +2,7 @@ import React, { Fragment, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteDetails, getDetails } from "../redux/actions/index.js";
+import "./styles/Details.css"
 
 export default function Details(props) {
   const dispatch = useDispatch();
@@ -24,10 +25,6 @@ export default function Details(props) {
               {myDog.breed_group ? (
                 <div className="breed_group">
                   <div className="imageSection">
-                    <img
-                      alt="a tiny svg dog"
-                      className="detailsSVG"
-                    />
                   </div>
                   <div className="infoSection">
                     <h3>Breed group: </h3>
@@ -39,10 +36,6 @@ export default function Details(props) {
               )}
               <div className="life_span">
                 <div className="imageSection">
-                  <img
-                    alt="a tiny svg dog"
-                    className="detailsSVG"
-                  />
                 </div>
                 <div className="infoSection">
                   <h3>Life span: </h3>
@@ -51,10 +44,6 @@ export default function Details(props) {
               </div>
               <div className="weights">
                 <div className="imageSection">
-                  <img
-                    alt="a tiny svg dog"
-                    className="detailsSVG"
-                  />
                 </div>
                 <div className="infoSection">
                   <h3>Weight: </h3>
@@ -64,10 +53,6 @@ export default function Details(props) {
               </div>
               <div className="heights">
                 <div className="imageSection">
-                  <img
-                    alt="a tiny svg bone"
-                    className="detailsSVG"
-                  />
                 </div>
                 <div className="infoSection">
                   <h3>Height: </h3>
@@ -92,7 +77,7 @@ export default function Details(props) {
               </div>
             </div>
             <Link to="/home">
-              <button className="button">Back</button>
+              <button className="button1">Back</button>
             </Link>
           </div>
         </div>

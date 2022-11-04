@@ -200,7 +200,7 @@ export default function SideBar() {
                     <div className="addDog">
                         <Link to="/Create/" className="tooltip">
                             <span className="material-icons">New-Dog</span>
-                            <span className="tooltiptext">Add your Woof 🐕</span>
+                            <span className="tooltiptext">Add your Dog! 🐕</span>
                         </Link>
                     </div>
                 </div>

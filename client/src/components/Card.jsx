@@ -7,7 +7,7 @@ export default function DogCard( { id, name, image, temperament, temperaments } 
         return (
             <div>
                 <div className="dogCard">
-                    <Link to={`/home/${id}`}>
+                    <Link to={`/details/${id}`}>
                         <div className="titleArea">
                             <h4 className="dogName">{name}</h4>
                         </div>
@@ -36,7 +36,7 @@ export default function DogCard( { id, name, image, temperament, temperaments } 
         return (
             <div>
                 <div className="dogCard">
-                    <Link to={`/home/${id}`}>
+                    <Link to={`/details/${id}`}>
                         <div className="titleArea">
                             <h4 className="dogName">{name}</h4>
                         </div>

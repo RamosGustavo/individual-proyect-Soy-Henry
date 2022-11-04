@@ -23,7 +23,6 @@ function Home() {
       <h1 className="one">DOG WORLD</h1>
       <NavBar />
       <SideBar />
-
       <div className="Paginado">
         <Paginado
           dogsPerPage={dogsPerPage}

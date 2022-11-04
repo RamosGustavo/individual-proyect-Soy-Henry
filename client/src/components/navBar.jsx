@@ -12,7 +12,9 @@ export default function NavBar() {
                         <Link to="/home">
                         </Link>
                         <div>
-                            <h1>WOW</h1>
+                        <Link to="/home">
+                            <h1 className="logoAndTitle">WOW</h1>
+                            </Link>
                             <p>Your dog page</p>
                         </div>
                     </div>

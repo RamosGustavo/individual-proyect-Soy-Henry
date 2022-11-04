@@ -1,20 +1,14 @@
 .bodix {
-    width: 75%;
-    height: 95%;
     font-size: 20px;
 }
 
 .mainContainer {
-    margin-top: 2%;
-    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(1, 53, 5);
-    box-shadow: 6px 7px 8px -6px rgba(69, 69, 69, 0.7);
-    border-radius: 15px;
+    background-image: radial-gradient(circle, #2e232a, #362b36, #3d3444, #413e52, #434860, #494961, #4f4961, #544a61, #584251, #553d42, #4c3a36, #41372f);
     color: white;
 }
 
@@ -25,10 +19,12 @@
 }
 
 .image {
-    border-radius: 15px;
-    height: 350px;
-    border: 3px white solid;
-    box-shadow: 6px 7px 8px -6px rgba(255, 245, 245, 0.7);
+    height: 80%;
+    max-height: 600px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+    border-radius: 8px;
 }
 
 .detailsContainer {
@@ -37,12 +33,16 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    color: #000000 ;
     background-color: rgba(255, 255, 255, 0.192);
     padding: 8px;
     border-radius: 15px;
-    max-width: 80%;
+    max-width: 70%;
     min-height: 25%;
     margin: 10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+                letter-spacing: 1.8px;
+            word-spacing: 1.6px;
 }
 
 .breed_group {
@@ -93,13 +93,36 @@
     border-radius: 15px;
 }
 
-.button {
-    background-color: rgb(255, 0, 0);
-    color: white;
+.button1 {
+    margin-top: 0.5em;
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #27ae60;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
     cursor: pointer;
-    line-height: 2.1;
-    width: 75px;
-    font-size: 18px;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 17px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
 }
 
 .imageSection {
